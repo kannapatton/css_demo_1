@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 div {
     width: 200px;
     height: 200px;
@@ -5,9 +9,10 @@ div {
 }
 h1 {
     background-color: pink;
-    width: 100px;
+    width: 200px;
     padding-left: 100px;
     padding-top: 50px;
+    margin: 0;
 }
 /* # for id */
 /* px are commonly used for borders because they're small and consistent */
@@ -16,7 +21,9 @@ h1 {
     border-width: 5px;
     border-color: black;
     border-style: solid;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    margin-left: 50px;
+    margin-bottom: 100px;
 }
 /* box-sizing: border-box causes the border and content to  all together occupy 200px in this example */
 #two {
@@ -26,6 +33,7 @@ h1 {
     border-style: dashed;
     border-left-width: 8px;
     padding-right: 50px;
+    margin: 200px;
 
 }   
 
@@ -39,5 +47,15 @@ h1 {
 }
 
 button{
+    /* this would pad 20px all the way around */
     padding: 20px;
+
+  /*       vertical(top and bottom) | horizontal(left and right)
+  padding: 10px 20px;
+  
+            top | horizontal| bottom
+    padding: 1px  2px  2px;
+    
+            top | right | bottom | left (think clockwise)
+    padding: 10px 20px 30px 40px;*/
 }
